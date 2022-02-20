@@ -1,0 +1,188 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  background-color: #2c2a2a;
+  height: 100%;
+  width: 100%;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+#bannerContainer {
+  display: flex;
+  flex: 1;
+  max-width: 30%;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  color: #717171;
+  background-color: #393939;
+  border-top-right-radius: 8vw;
+}
+
+#headerText {
+  text-align: center;
+  font-size: 60pt;
+  font-family: "Sora", sans-serif;
+}
+
+#username {
+  align-self: center;
+  text-align: center;
+  vertical-align: bottom;
+  background: transparent;
+  max-width: 60%;
+  border: none;
+  outline: none;
+  font-size: 60pt;
+  font-family: "Sacramento", cursive;
+  background-image: linear-gradient(#717171, #717171);
+  background-position: bottom 5px center;
+  background-size: 100% 2px;
+  background-repeat: no-repeat;
+  color: #c1c1c1;
+}
+
+#banner {
+  margin: 5%;
+}
+
+#listContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+  height: 100%;
+}
+
+#listHeader {
+  align-self: center;
+  text-align: center;
+  vertical-align: bottom;
+  font-size: 65pt;
+  margin: 20px;
+  font-family: "Sacramento", cursive;
+  color: #d8d7d7;
+}
+
+#list {
+  display: flex;
+  flex: 1;
+  width: 96%;
+  padding-left: 2%;
+  padding-right: 2%;
+  flex-direction: row;
+  justify-content: space-around start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  overflow: auto;
+}
+
+#list::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+#list::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+#list::-webkit-scrollbar-thumb {
+  background-color: #dfdfdf;
+  border-radius: 10px;
+}
+
+#addButton {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #c1c1c1;
+}
+
+#addButton > t {
+  white-space: nowrap;
+  margin: 0;
+  width: min-content;
+  color: #717171;
+  font-family: "Sora", sans-serif;
+  font-weight: 800;
+  font-size: 30pt;
+  margin-right: 30px;
+}
+
+#addButton:hover {
+  border-color: #dfdfdf;
+}
+
+.listItem {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  border-style: solid;
+  border-color: transparent;
+  flex: 1;
+  height: 22vh;
+  margin: 15px;
+  min-width: 30%;
+  max-width: 30%;
+  background-color: #4e4e4e;
+  border-radius: 40px;
+}
+
+.listItem:hover {
+  border-color: #717171;
+}
+
+.listItem > t {
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  max-height: 75%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.itemHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  vertical-align: bottom;
+  flex: 1;
+  width: 100%;
+  min-height: 25%;
+  max-height: 25%;
+  padding: 2%;
+}
+
+.itemHeader > input {
+  margin: 5px 15px 5px 15px;
+  align-self: center;
+  min-height: 70%;
+  aspect-ratio: 1;
+  border-style: solid;
+  border-radius: 15px;
+  border-width: 8px;
+  border-color: #e2d27d;
+  background-color: transparent;
+}
+
+.itemHeader > t {
+  display: flex;
+  flex: 1;
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+  font-size: 30pt;
+  color: #fff;
+  align-self: center;
+}
