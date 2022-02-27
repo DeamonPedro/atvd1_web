@@ -1,5 +1,5 @@
 const requestCurrencyAPI = async (from, to) => {
-  const apiUrl = `http://economia.awesomeapi.com.br/json/last/${from}-${to}`;
+  const apiUrl = `https://economia.awesomeapi.com.br/json/last/${from}-${to}`;
   response = await fetch(apiUrl);
   data = await response.json();
   return parseFloat(data[from + to].bid);
