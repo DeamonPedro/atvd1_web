@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
+    <style>
+        body {
+            background-color: #171717;
+        }
+
+        p {
+            font-family: 'Courier New', Courier, monospace;
+            color: ghostwhite;
+        }
+    </style>
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <p>
+        Convert from
+        <select id="currencyIn" selected="USD">
+            <option value="BRL">[R$] Real</option>
+            <option selected value="USD">[$] Dólar</option>
+            <option value="EUR">[€] Euro</option>
+            <option value="GBP">[£] Libra</option>
+            <option value="JPY">[¥] Iene</option>
+            <option value="CHF">[Fr] Francos</option>
+        </select>
+        To
+        <select id="currencyOut" selected="BRL">
+            <option selected value="BRL">[R$] Real</option>
+            <option value="USD">[$] Dólar</option>
+            <option value="EUR">[€] Euro</option>
+            <option value="GBP">[£] Libra</option>
+            <option value="JPY">[¥] Iene</option>
+            <option value="CHF">[Fr] Francos</option>
+        </select>
+    </p>
+
+    <input type="number" min="0" value="0" id="coinInput" />
+    <input type="button" value="Converter" id="convertButton">
+    <br />
+    <p id="textOut">Result: </p>
+</body>
+
+</html>
