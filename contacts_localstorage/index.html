@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
+    <style>
+        body {
+            display: flex;
+            align-content: center;
+            flex-direction: column;
+            background-color: #171717;
+            font-family: 'Courier New', Courier, monospace;
+            color: ghostwhite;
+        }
+
+        main {
+            margin: auto;
+            max-width: 300px;
+        }
+
+        section {
+            display: flex;
+            margin-top: 10px;
+            flex-direction: column;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+            background-color: black;
+            padding: 10px;
+        }
+
+        input {
+            border: none;
+            padding: 4px;
+            width: calc(100% - 8px);
+        }
+    </style>
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <main>
+        Nome:
+        <input type="text" name="name" id="nameInput" />
+
+        Surname:
+        <input type="text" id="surnameInput" />
+
+        Numero:
+        <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" id="telInput" />
+
+        <p>
+            Genre:
+            <select id="genreInput">
+                <option value="m">Masculino</option>
+                <option value="f">Feminino</option>
+                <option value="*">Outro</option>
+            </select>
+        </p>
+        <input type="button" value="SAVE" id="saveButton">
+        <br />
+        <section>
+        </section>
+    </main>
+</body>
+
+</html>
