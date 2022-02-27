@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+
+    <style>
+        .loader {
+            border: 16px solid #f3f3f3;
+            border-top: 16px solid darkgrey;
+            border-radius: 50%;
+            width: 120px;
+            margin: auto;
+            margin-top: 200px;
+            height: 120px;
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+
+    <script src="./script.js"></script>
+</head>
+
+<body class="bg-secondary">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <main class="container py-5">
+        <header class="text-center mb-5">
+            <h1 class="display-4 font-weight-bold text-white">Pokémon's List</h1>
+        </header>
+        <section class="row">
+            <h2 class="font-weight-bold mb-2 text-white col">Pokemon for Type:</h2>
+            <select class="rounded mb-2 col-2" id="pokemonType">
+            </select>
+        </section>
+        <div id="list" class="row pb-5">
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card rounded shadow-sm border-0">
+                    <div class="card-body p-4"><img
+                            src="https://images.lojanike.com.br/320x320/produto/tenis-zoom-fly-4-CT2392-001-1-11628866933.jpg"
+                            alt="" class="img-fluid d-block mx-auto mb-3">
+                        <h5> <a href="#" class="text-dark">Boot#1</a></h5>
+                        <p class="small text-muted font-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Architecto quibusdam aspernatur.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card rounded shadow-sm border-0">
+                    <div class="card-body p-4"><img
+                            src="https://images.lojanike.com.br/320x320/produto/tenis-nike-zoom-span-4-DC8996-001-1-11638989394.jpg"
+                            alt="" class="img-fluid d-block mx-auto mb-3">
+                        <h5> <a href="#" class="text-dark">Boot#2</a></h5>
+                        <p class="small text-muted font-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Delectus, aliquid similique?
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card rounded shadow-sm border-0">
+                    <div class="card-body p-4"><img
+                            src="https://images.lojanike.com.br/320x320/produto/tenis-nike-downshifter-11-CW3411-006-1.jpg"
+                            alt="" class="img-fluid d-block mx-auto mb-3">
+                        <h5> <a href="#" class="text-dark">Boot#3</a></h5>
+                        <p class="small text-muted font-italic">Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Ducimus maiores possimus.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card rounded shadow-sm border-0">
+                    <div class="card-body p-4"><img
+                            src="https://images.lojanike.com.br/320x320/produto/tenis-nike-air-zoom-terra-kiger-7-CW6062-004-1-11628868748.jpg"
+                            alt="" class="img-fluid d-block mx-auto mb-3">
+                        <h5> <a href="#" class="text-dark">Boot#4</a></h5>
+                        <p class="small text-muted font-italic">Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Dolorum ratione ut possimus.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card rounded shadow-sm border-0">
+                    <div class="card-body p-4"><img
+                            src="https://images.lojanike.com.br/320x320/produto/tenis-nike-quest-4-DA1105-010-1-11628868087.jpg"
+                            alt="" class="img-fluid d-block mx-auto mb-3">
+                        <h5> <a href="#" class="text-dark">Boot#5</a></h5>
+                        <p class="small text-muted font-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Sit dicta odio laboriosam exercitationem.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card rounded shadow-sm border-0">
+                    <div class="card-body p-4"><img
+                            src="https://images.lojanike.com.br/320x320/produto/tenis-nike-revolution-6-DC3728-007-1-11638988950.jpg"
+                            alt="" class="img-fluid d-block mx-auto mb-3">
+                        <h5> <a href="#" class="text-dark">Boot#6</a></h5>
+                        <p class="small text-muted font-italic">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Aspernatur laudantium ea aperiam ullam!
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
